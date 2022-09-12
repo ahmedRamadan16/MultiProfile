@@ -32,7 +32,15 @@
                 li.classList.remove("active");
             });
             e.preventDefault();
+           if(window.location.protocol == "https:")
+           {
+            console.log("no")
+            window.location.pathname=`/MultiProfile/html/${e.target.closest("li").dataset.page}`;
+           }else {
             window.location.pathname=`/html/${e.target.closest("li").dataset.page}`;
+
+           }
+            //window.location.pathname=`/html/${e.target.closest("li").dataset.page}`;
             e.target.closest("li").classList.add("active");
             window.localStorage.setItem("currentPage",e.target.closest("li").dataset.page);
         });
