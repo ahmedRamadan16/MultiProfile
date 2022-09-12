@@ -54,7 +54,8 @@
       let progress=document.querySelectorAll(".features .skills .skills-progress .progress span")
       window.onscroll=function()
       {
-        if(window.location.pathname.contains("html/home.html"))
+
+        if(window.location.pathname.includes("html/home.html"))
         {
       let featureOffset=document.querySelector(".features").offsetTop;
         if(window.scrollY >= featureOffset)
