@@ -17,7 +17,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            background-image: url("../../../imgs/header-lines.jpg");
+            background-image: url("../imgs/header-lines.jpg");
             background-position: top right;
             background-repeat: no-repeat;
 
@@ -91,7 +91,7 @@
                     }
                     
                     &.active a,a:hover {
-                        background-image: url(../../../imgs/profile/nav-active.png);
+                        background-image: url(../imgs/profile/nav-active.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         background-position: center;

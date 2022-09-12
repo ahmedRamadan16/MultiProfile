@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  background-image: url("../../../imgs/header-lines.jpg");
+  background-image: url("../imgs/header-lines.jpg");
   background-position: top right;
   background-repeat: no-repeat;
   gap: 1rem;
@@ -93,7 +93,7 @@
   font-size: 18px;
 }
 .navbar .row .links ul li.active a, .navbar .row .links ul li a:hover {
-  background-image: url(../../../imgs/profile/nav-active.png);
+  background-image: url(../imgs/profile/nav-active.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -208,15 +208,15 @@
 }
 
 .home-landing {
-  background-image: url("../../../imgs/header-img.jpg");
+  background-image: url("../imgs/header-img.jpg");
 }
 
 .about-landing, .contact-landing {
-  background-image: url("../../../imgs/header-img-2.jpg");
+  background-image: url("../imgs/header-img-2.jpg");
 }
 
 .profile-landing {
-  background-image: url("../../../imgs/header-img-3.jpg");
+  background-image: url("../imgs/header-img-3.jpg");
 }
 
 .main-heading {
@@ -950,7 +950,7 @@ a {
   width: 20%;
 }
 .top-box .divider {
-  background-image: url("../../../imgs/header-lines.jpg");
+  background-image: url("../imgs/header-lines.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
