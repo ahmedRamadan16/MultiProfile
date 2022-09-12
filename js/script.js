@@ -32,7 +32,7 @@
                 li.classList.remove("active");
             });
             e.preventDefault();
-            window.location.pathname=`/MultiProfile//html/${e.target.closest("li").dataset.page}`;
+            window.location.pathname=`/html/${e.target.closest("li").dataset.page}`;
             e.target.closest("li").classList.add("active");
             window.localStorage.setItem("currentPage",e.target.closest("li").dataset.page);
         });
@@ -54,7 +54,7 @@
       let progress=document.querySelectorAll(".features .skills .skills-progress .progress span")
       window.onscroll=function()
       {
-        if(window.location.pathname === '/MultiProfile/html/home.html')
+        if(window.location.pathname.contains("html/home.html"))
         {
       let featureOffset=document.querySelector(".features").offsetTop;
         if(window.scrollY >= featureOffset)
