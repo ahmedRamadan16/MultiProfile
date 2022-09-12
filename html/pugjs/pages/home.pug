@@ -16,7 +16,7 @@ html
                 include ../helpers/mixins/mainHeading.pug
                 +mainHeading("Slider","LOREM IP SUMS")
                 .row 
-                    .left 
+                    div(class="left wow fadeInLeftBig"  data-wow-offset="400" ) 
                         h2.main-h2 MORBI #[span ACCUMSAN]
                         p Credit goes to #[span Unsplash] for images used in this template. Morbi dapibus rhoncus nulla ac tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit amet malesuada mauris magna eget dolor. Morbi ornare convallis vulputate. Donec ut suscipit nisl, ac elementum nisi.
                         ul.list-unstyled 
@@ -26,7 +26,7 @@ html
                         .buttons 
                             button.primary-btn.btn Prima Liuam 
                             button.default.btn Prima Liuam
-                    .right.mySwiper
+                    div(class="right mySwiper wow fadeInRightBig" data-wow-offset="400")
                         .swiper-wrapper
                             .swiper-slide 
                                 img(src="../../../imgs/slider/1.jpg")
@@ -41,7 +41,7 @@ html
                 include ../helpers/mixins/mainHeading.pug
                 +mainHeading("Who We Are","PROIN GRAVIDANI") 
                 .row 
-                    .left 
+                    div(class="left wow fadeInLeftBig"  data-wow-offset="600" ) 
                         .content 
                             .box.color.green 
                                 span Technologies 
@@ -50,7 +50,7 @@ html
                             .box.color.crimson #[span Vision]
                             .box.color.yellow #[spab Awards]
                             .box #[img(src="../../../imgs/technologie/6.jpg")]
-                    .right 
+                    div(class="right wow fadeInRightBig"  data-wow-offset="400" ) 
                         h2.main-h2 Our #[span TECHNOLOGIES]
                         p Sed tempor ante aliquam, finibus diam in, mattis enim. Aliquam neque odio, aliquam non ullamcorper nec, tempus non libero. Etiam in odio rutrum, euismod massa quis, ullamcorper diam. Mauris ac lectus mollis, mollis tortor vel, placerat elit. Quisque euismod ut neque in rutrum. Quisque vitae dignissim elit. Aliquam vel erat ante. Pellentesque luctus efficitur ultrices. Nam eget odio ultrices, laoreet arcu eu, vehicula ligula. Quisque non nisi finibus, consequat nulla vitae, accumsan lectus. Morbi vestibulum, massa a gravida commodo, enim nisi porttitor nulla, ut aliquam turpis urna non sem. Suspendisse id odio ac orci ornare fermentum. Sed tincidunt id odio vel interdum.
                         p Etiam mollis nisi ut eleifend condimentum. Morbi posuere convallis lacus, a venenatis risus mattis eget. Vestibulum vitae gravida augue, vitae molestie dui. Duis lobortis nisi eget consequat tincidunt. Sed vel tortor vitae nisl pharetra dignissim. Sed lorem neque, sagittis eget sem sit amet, aliquet fringilla tortor. Praesent et aliquet arcu. Nunc tempor vulputate sapien, ut varius risus blandit at.
@@ -106,25 +106,28 @@ html
                 +mainHeading("FEATURES","PROIN GRAVIDANI") 
                 p Consequat ipsum, nex sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                 .skills.row  
-                    .skills-progress
+                    div(class="skills-progress wow fadeInLeftBig " data-wow-offset="200")
                         .info 
                             h2 Wordpress
                             span 80% 
                         .progress
                             span(data-width="80%") 
-                    .skills-progress
+                    div(class="skills-progress wow fadeInRightBig " data-wow-offset="200")
+                    
                         .info 
                             h2 SEO
                             span 75% 
                         .progress
                             span(data-width="75%") 
-                    .skills-progress
+                    div(class="skills-progress wow fadeInLeftBig " data-wow-offset="200")
+                    
                         .info 
                             h2 Web Design
                             span 90% 
                         .progress
                             span(data-width="90%") 
-                    .skills-progress
+                    div(class="skills-progress wow fadeInRightBig " data-wow-offset="200")
+                    
                         .info 
                             h2 UX
                             span 86% 

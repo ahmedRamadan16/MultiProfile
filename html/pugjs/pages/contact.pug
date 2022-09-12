@@ -16,7 +16,8 @@ html
                 include ../helpers/mixins/mainHeading.pug
                 +mainHeading("CONTACT","PROIN GRAVIDANI")
                 .row 
-                    .left 
+                    div(class="left wow fadeInLeftBig" data-wow-offset="300") 
+                    
                         h2.main-h2 Our #[span INFORMATION]
                         p Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue.
                         ul.list-unstyled 
@@ -35,7 +36,8 @@ html
                                 .address.box 
                                     h3 PHONE 
                                     p +(123) 456 7890
-                    .right 
+                    div(class="right wow fadeInRightBig" data-wow-offset="300") 
+                    
                         h2.main-h2 Leave #[span A Message]
                         form 
                             input(type="text" required placeholder="Name")
