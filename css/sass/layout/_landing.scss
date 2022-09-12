@@ -1,0 +1,64 @@
+.landing {
+    max-width: 90%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-position: center;
+    position: relative;
+    @include breakBoints(Tablet)
+    {
+        max-width: 100%;
+    }
+    .message-content{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: $navColor;
+        color: #fff;
+        .container{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem 0;
+            @include breakBoints (Mobile)
+            {
+                flex-direction: column;
+                text-align: center;
+            }
+            .left{
+                border-right: 2px solid $navSecondColor;
+                height: 100%;
+                padding: 0  1rem;
+
+                h2{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+
+                }
+            }
+            .right{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                max-width: 600px;
+                p{
+                    font-size: .7rem;
+                    line-height: 1.7;
+                }
+            }
+        }
+        }
+}
+.home-landing{
+    background-image: url("../../../imgs/header-img.jpg");
+
+}
+.about-landing,.contact-landing{
+    background-image: url("../../../imgs/header-img-2.jpg");
+}
+.profile-landing{
+    background-image: url("../../../imgs/header-img-3.jpg");
+
+}

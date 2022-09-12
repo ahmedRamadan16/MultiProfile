@@ -1,0 +1,22 @@
+.btn{
+    padding: 1rem 3rem;
+    font-weight: bold ;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease-in;
+    &:hover{
+        color: #B8E6F0;
+    }
+    @include breakBoints(Mobile)
+    {
+        padding: 1rem;
+        font-size: 16px;
+    }
+}
+.primary-btn
+{
+    background-color: $navSecondColor;
+    color: #fff;
+    border: none;
+}

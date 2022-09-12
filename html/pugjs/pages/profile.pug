@@ -1,0 +1,64 @@
+doctype 
+html 
+    head 
+        meta(name="description" content="")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title MultiProfile
+        include ../helpers/link.pug
+
+    body
+        include ../components/navbar.pug
+        include ../helpers/mixins/landing.pug
+        +landing("profile-landing","Work","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere lectus augue, non rhoncus erat accumsan eu. Sed dictum sem.")    
+        .gallery 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("PROFILE","PROIN GRAVIDANI")
+                .tabs 
+                    ul.list-unstyled 
+                        li(class="active" data-img="all") All 
+                        li(data-img="design") Design 
+                        li(data-img="web") Web
+                        li(data-img="branding") Branding  
+                        li(data-img="print") Print
+                .row 
+                    .image#design 
+                        img(src="../../../imgs/profile/18.jpg")
+                    
+                    .image#design 
+                        img(src="../../../imgs/profile/19.jpg")
+                    
+                    .image#design 
+                        img(src="../../../imgs/profile//20.jpg")
+                    
+                    .image#design 
+                        img(src="../../../imgs/profile/21.jpg")
+                    
+                    .image#web 
+                        img(src="../../../imgs/profile/22.jpg")
+                    
+                    .image#web 
+                        img(src="../../../imgs/profile/23.jpg")
+                    
+                    .image#web 
+                        img(src="../../../imgs/profile/24.jpg")
+                    
+                    .image#branding 
+                        img(src="../../../imgs/profile/25.jpg")
+                    
+                    .image#branding 
+                        img(src="../../../imgs/profile/26.jpg")
+                    
+                    .image#branding 
+                        img(src="../../../imgs/profile/27.jpg")
+                    .image#print 
+                        img(src="../../../imgs/profile/28.jpg")
+                    .image#print 
+                        img(src="../../../imgs/profile/29.jpg")
+                    
+
+
+
+        include  ../components/footer.pug
+        include ../helpers/scripts.pug

@@ -1,0 +1,49 @@
+doctype 
+html 
+    head 
+        meta(name="description" content="")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title MultiProfile
+        include ../helpers/link.pug
+
+    body
+        include ../components/navbar.pug
+        include ../helpers/mixins/landing.pug
+        +landing("contact-landing","IN TOUCH","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere lectus augue, non rhoncus erat accumsan eu. Sed dictum sem.")    
+        .contact-content 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("CONTACT","PROIN GRAVIDANI")
+                .row 
+                    .left 
+                        h2.main-h2 Our #[span INFORMATION]
+                        p Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue.
+                        ul.list-unstyled 
+                            li 
+                                i(class="fa-solid fa-location-dot fa-2x")
+                                .address.box 
+                                    h3 Address 
+                                    p No. 1234, Rama IX Road, Bangkok 12345, Thailand.
+                            li 
+                                i(class="fa-solid  fa-envelope fa-2x")
+                                .address.box 
+                                    h3 EMAIL 
+                                    p mail@company.com
+                            li 
+                                i(class="fa-solid fa-phone fa-2x")
+                                .address.box 
+                                    h3 PHONE 
+                                    p +(123) 456 7890
+                    .right 
+                        h2.main-h2 Leave #[span A Message]
+                        form 
+                            input(type="text" required placeholder="Name")
+                            input(type="email" required placeholder="Email")     
+                            input(type="text" required placeholder="Subject")
+                            textarea(name="", cols="30", rows="10" placeholder="Message")      
+                            input(type="submit" value="Send Message" class="btn primary-btn")
+
+                  
+        include  ../components/footer.pug
+        include ../helpers/scripts.pug

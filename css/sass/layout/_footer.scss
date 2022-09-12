@@ -1,0 +1,62 @@
+.top-box {
+    height: 40px;
+    z-index: 10;
+    display: flex;
+    .left{
+        background-color: $navSecondColor;
+        width: 20%;
+    }
+    .divider{
+        background-image: url("../../../imgs/header-lines.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 10%;
+    }
+    .right{
+        background-color: $navColor;
+        width: 70%;
+
+    }
+}
+footer{
+    background-color: $footerColor;
+    
+    .row {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px 200px;
+        gap: 3rem;
+        padding: $sectionPadding;
+        color: $grayColor;
+        @include breakBoints(Tablet)
+        {
+            grid-template-columns: 1fr ;
+        }
+        .col {
+            h2{
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                color: #fff;
+            }
+            ul {
+                li{
+                    a{
+                        color: $grayColor;
+                        padding: .5rem;
+                        transition: .3s ease-in;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        background-color: #122f35;
+        padding: 2rem 0;
+        text-align: center;
+        color: #fff;
+    }
+}

@@ -1,0 +1,55 @@
+.contact-content{
+    padding: $sectionPadding;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin: 100px 0;
+        @include breakBoints(Tablet)
+        {
+            grid-template-columns: 1fr;
+        }
+        .left{
+          
+            p{
+                line-height: 1.7;
+                margin-bottom: 2rem;
+            }
+            ul{
+                li{
+                    display: flex;
+                    gap: 2rem;
+                    i{
+                        color: $headingColor
+                    }
+                    h3{
+                        color: $headingColor;
+
+                    }
+                }
+            }
+        }
+        .right{
+            @include breakBoints(Mobile)
+            {
+                overflow: hidden;
+            }
+      
+            form {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                gap: 2rem;
+                input[type="text"],input[type="email"],textarea{
+                    padding: 1rem;
+                    background-color: rgb(212, 223, 225);
+                    border: 1px solid rgb(212, 223, 225);
+                    color: black;
+                    font-size: 20px;
+                    outline: none;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+nav.navbar 
+    .container 
+        .row 
+            .logo
+                div.bars
+                 -for(var i=0;i<3;i++)
+                    span 
+                span MULTI PRO
+            .links 
+                i(class="fa fa-bars fa-2x")
+                ul.list-unstyled 
+                    li(class="active" data-page="home.html") #[a(href="home.html"  ) #[span Home]]
+                    li(data-page="about.html") #[a(href="about.html" ) #[span About]] 
+                    li(data-page="profile.html") #[a(href="profile.html"  ) #[span Profile]] 
+                    li(data-page="contact.html") #[a(href="contact.html"  ) #[span Contact]] 
+

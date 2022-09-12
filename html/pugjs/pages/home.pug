@@ -1,0 +1,142 @@
+doctype 
+html 
+    head 
+        meta(name="description" content="")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title MultiProfile
+        include ../helpers/link.pug
+
+    body
+        include ../components/navbar.pug
+        include ../helpers/mixins/landing.pug
+        +landing("home-landing","welcome","Multi Profile is free responsive website template for everyone. Feel free to download and use this template for your websites. Thank you for visiting templatemo.")    
+        .sldier-section 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Slider","LOREM IP SUMS")
+                .row 
+                    .left 
+                        h2.main-h2 MORBI #[span ACCUMSAN]
+                        p Credit goes to #[span Unsplash] for images used in this template. Morbi dapibus rhoncus nulla ac tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit amet malesuada mauris magna eget dolor. Morbi ornare convallis vulputate. Donec ut suscipit nisl, ac elementum nisi.
+                        ul.list-unstyled 
+                            li #[i.fa-solid.fa-arrow-right-long] #[span Sed non mauris vitae erat consequat auctor ]
+                            li #[i.fa-solid.fa-arrow-right-long] #[span Class aptent taciti sociosqur ]
+                            li #[i.fa-solid.fa-arrow-right-long] #[span Wonubia nostra, per inceptos himeos ]
+                        .buttons 
+                            button.primary-btn.btn Prima Liuam 
+                            button.default.btn Prima Liuam
+                    .right.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide 
+                                img(src="../../../imgs/slider/1.jpg")
+                            .swiper-slide
+                                img(src="../../../imgs/slider/2.jpg")
+                            .swiper-slide
+                                img(src="../../../imgs/slider/3.jpg")
+                        .swiper-button-next
+                        .swiper-button-prev
+        .who-we-are 
+           .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Who We Are","PROIN GRAVIDANI") 
+                .row 
+                    .left 
+                        .content 
+                            .box.color.green 
+                                span Technologies 
+                            .box #[img(src="../../../imgs/technologie/4.jpg")]
+                            .box #[img(src="../../../imgs/technologie/5.jpg")]
+                            .box.color.crimson #[span Vision]
+                            .box.color.yellow #[spab Awards]
+                            .box #[img(src="../../../imgs/technologie/6.jpg")]
+                    .right 
+                        h2.main-h2 Our #[span TECHNOLOGIES]
+                        p Sed tempor ante aliquam, finibus diam in, mattis enim. Aliquam neque odio, aliquam non ullamcorper nec, tempus non libero. Etiam in odio rutrum, euismod massa quis, ullamcorper diam. Mauris ac lectus mollis, mollis tortor vel, placerat elit. Quisque euismod ut neque in rutrum. Quisque vitae dignissim elit. Aliquam vel erat ante. Pellentesque luctus efficitur ultrices. Nam eget odio ultrices, laoreet arcu eu, vehicula ligula. Quisque non nisi finibus, consequat nulla vitae, accumsan lectus. Morbi vestibulum, massa a gravida commodo, enim nisi porttitor nulla, ut aliquam turpis urna non sem. Suspendisse id odio ac orci ornare fermentum. Sed tincidunt id odio vel interdum.
+                        p Etiam mollis nisi ut eleifend condimentum. Morbi posuere convallis lacus, a venenatis risus mattis eget. Vestibulum vitae gravida augue, vitae molestie dui. Duis lobortis nisi eget consequat tincidunt. Sed vel tortor vitae nisl pharetra dignissim. Sed lorem neque, sagittis eget sem sit amet, aliquet fringilla tortor. Praesent et aliquet arcu. Nunc tempor vulputate sapien, ut varius risus blandit at.
+                        p Phasellus lobortis nisl ut tortor placerat, vel auctor felis semper. Quisque ut auctor sapien. Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue. Cras laoreet est at magna malesuada, a viverra ipsum luctus. Nullam sed lacinia magna. Donec ullamcorper lectus et diam porttitor, a tincidunt diam iaculis. Donec sagittis posuere pellentesque.
+        .blog-section 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Blog","PROIN GRAVIDANI")
+                .row 
+                    .left 
+                        .box 
+                            .left 
+                                h2 NULLAM ACURNA EUELIS
+                                p Scondimentum siamet augue autodit sit red non neque elit edut nemoen.
+                            .right 
+                                h3 Nov 
+                                span 18
+                        
+                        .box 
+                            .left 
+                                h2 NULLAM ACURNA EUELIS
+                                p Scondimentum siamet augue autodit sit red non neque elit edut nemoen.
+                            .right 
+                                h3 Nov 
+                                span 20
+                        
+                        .box 
+                            .left 
+                                h2 NULLAM ACURNA EUELIS
+                                p Scondimentum siamet augue autodit sit red non neque elit edut nemoen.
+                            .right 
+                                h3 Nov 
+                                span 22
+                    .right 
+                        
+                        .box 
+                            .left 
+                                h3 Nov 
+                                span 19
+                            .right 
+                                h2 NULLAM ACURNA EUELIS
+                                p Scondimentum siamet augue autodit sit red non neque elit edut nemoen.
+                        .box 
+                            .left 
+                                h3 Nov 
+                                span 19
+                            .right 
+                                h2 NULLAM ACURNA EUELIS
+                                p Scondimentum siamet augue autodit sit red non neque elit edut nemoen.
+        .features 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("FEATURES","PROIN GRAVIDANI") 
+                p Consequat ipsum, nex sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                .skills.row  
+                    .skills-progress
+                        .info 
+                            h2 Wordpress
+                            span 80% 
+                        .progress
+                            span(data-width="80%") 
+                    .skills-progress
+                        .info 
+                            h2 SEO
+                            span 75% 
+                        .progress
+                            span(data-width="75%") 
+                    .skills-progress
+                        .info 
+                            h2 Web Design
+                            span 90% 
+                        .progress
+                            span(data-width="90%") 
+                    .skills-progress
+                        .info 
+                            h2 UX
+                            span 86% 
+                        .progress
+                            span(data-width="86%") 
+        include  ../components/footer.pug
+        
+
+
+
+
+
+
+
+        include ../helpers/scripts.pug

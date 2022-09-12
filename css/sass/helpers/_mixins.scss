@@ -1,0 +1,32 @@
+@mixin breakBoints($point) {
+  @if $point == Mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == Tablet {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == Small {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $point == Medium {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == Large {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == X-Large {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }@else if $point == XX-Large {
+        
+    @media screen and (min-width:1400px) {
+        @content;       
+        }
+    }
+}

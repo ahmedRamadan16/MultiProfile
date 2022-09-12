@@ -1,0 +1,25 @@
+.main-heading{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    h1{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 2rem;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 2px;
+            background-color: black;
+        }
+    }
+    & + p{
+        text-align: center;
+        color: $grayColor;
+    }
+}

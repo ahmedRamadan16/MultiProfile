@@ -1,0 +1,14 @@
+.main-h2
+{
+    
+        font-size: 2rem;
+        margin: 2rem 0;
+        @include breakBoints(Mobile)
+        {
+            font-size: 1.5rem;
+        }
+        span{
+            color: $headingColor;
+        }
+    
+}

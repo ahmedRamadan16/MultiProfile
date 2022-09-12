@@ -1,0 +1,94 @@
+doctype 
+html 
+    head 
+        meta(name="description" content="")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title MultiProfile
+        include ../helpers/link.pug
+
+    body
+        include ../components/navbar.pug
+        include ../helpers/mixins/landing.pug
+        +landing("about-landing","About Us","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere lectus augue, non rhoncus erat accumsan eu. Sed dictum sem.")    
+        .who-we-are-about 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Who We Are","LOREM IP SUMS")
+                .row 
+                    .left
+                        img(src="../../../imgs/whoweare/7.jpg")
+                        h2.main-h2 Morbi #[span ACCUMSAN]
+                        p Morbi dapibus rhoncus nulla ac tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit amet malesuada mauris magna eget dolor.
+                        p Phasellus lobortis nisl ut tortor placerat, vel auctor felis semper. Quisque ut auctor sapien. Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue.
+                        button.primary-btn.btn Prima Liuam
+                    .right
+                        .image 
+                            img(src="../../../imgs/whoweare/8.jpg", alt="", srcset="")
+                            .info 
+                                h2 Feufelisda
+                                span NULLAM ACURNA
+                        .image 
+                            img(src="../../../imgs/whoweare/9.jpg", alt="", srcset="")
+                            .info 
+                                h2 Feufelisda
+                                span NULLAM ACURNA
+                        .image 
+                            img(src="../../../imgs/whoweare/10.jpg", alt="", srcset="")
+                            .info 
+                                h2 Feufelisda
+                                span NULLAM ACURNA
+        .balls-section 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Who We Are","LOREM IP SUMS")
+                .row 
+                    .col 
+                        img(src="../../../imgs/whoweare/11.png")
+                        h3 LOREM QUIS
+                        p Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.
+                    .col 
+                        img(src="../../../imgs/whoweare/12.png")
+                        h3 LOREM QUIS
+                        p Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.
+                    .col 
+                        img(src="../../../imgs/whoweare/13.png")
+                        h3 LOREM QUIS
+                        p Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.
+        .recent-posts 
+            .container 
+                include ../helpers/mixins/mainHeading.pug
+                +mainHeading("Who We Are","LOREM IP SUMS")
+                .row 
+                    .left 
+                        .box 
+                            h2.main-h2 AENEAN #[span SOLLICITUM]
+                            img(src="../../../imgs/recent/14.jpg")
+                            p #[span Aenean sollicitudin], lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        .box 
+                            h2.main-h2 DUIS  #[span SEDOIDO]
+                            img(src="../../../imgs/recent/15.jpg")
+                            p #[span Aenean sollicitudin], lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+
+                    .right 
+                        .box 
+                            h2.main-h2 LOREM  #[span IPSUMS]
+                            img(src="../../../imgs/recent/16.jpg")
+                            p #[span Aenean sollicitudin], lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        .box 
+                            h2.main-h2 AMET  #[span NIGH]
+                            img(src="../../../imgs/recent/17.jpg")
+                            p #[span Aenean sollicitudin], lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+
+
+
+
+
+
+
+
+            
+
+
+        include  ../components/footer.pug
+        include ../helpers/scripts.pug
