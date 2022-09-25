@@ -1,47 +1,43 @@
-body{
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @include breakBoints(Small)
-    {
-        width: 540px;
-    }
-    
-    @include breakBoints(Medium)
-    {
-        width: 720px;
-    }
-    
-    @include breakBoints(Large)
-    {
-        width: 960px;
-    }
-    
-    @include breakBoints(X-Large)
-    {
-        width: 1140px;
-    }
-    
-    @include breakBoints(XX-Large)
-    {
-        width: 1320px;
-    }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include breakBoints(Small) {
+    width: 540px;
+  }
+
+  @include breakBoints(Medium) {
+    width: 720px;
+  }
+
+  @include breakBoints(Large) {
+    width: 960px;
+  }
+
+  @include breakBoints(X-Large) {
+    width: 1140px;
+  }
+
+  @include breakBoints(XX-Large) {
+    width: 1320px;
+  }
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
-    display: block;
+a {
+  text-decoration: none;
+  display: block;
 }
-.list-unstyled{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
